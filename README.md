@@ -17,51 +17,63 @@ approach:   Сначала практика, потом теория
 и Linux-системами. Предпочитаю разбираться в том почему что-то работает —
 а не просто в том что оно работает.
 
+Этот профиль — живая дорожная карта моего роста.
+Большинство проектов ещё не реализованы — это честный план на ближайшие годы,
+а не список достижений. Буду обновлять по мере выполнения.
+
 ---
 
-## 🔧 Текущий стек
+## 🔧 Текущий уровень
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00878A?style=flat-square&logo=arduino&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-34A853?style=flat-square&logo=android&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+> Указан реальный уровень владения — без приукрашиваний.
+
+| Технология | Уровень | Комментарий |
+|------------|---------|-------------|
+| Linux | 🟢 Уверенный | Основная ОС, администрирование, драйвера |
+| Bash | 🟢 Уверенный | Скрипты, автоматизация, системные задачи |
+| Git | 🟡 Базовый | Коммиты, репозитории, основные команды |
+| Python | 🟡 Базовый | Скрипты, понимаю синтаксис |
+| C++ | 🟡 Базовый | Arduino уровень, изучаю |
+| Java + Gradle | 🟡 Базовый | Опыт через Minecraft моддинг |
+| Kotlin | 🔴 Не изучал | В планах для Android разработки |
+| Arduino C++ | 🔴 Не изучал | В планах, железо уже куплено |
 
 ---
 
 ## 🚀 Проекты
 
-### ✅ Готово
+### ✅ Реализовано
 
 | Проект | Описание | Стек |
 |--------|----------|------|
-| [SystemClock Mod](https://github.com/galaxySlab188/GLXSLB5-Repository) | Fabric мод для Minecraft — системное время в игре | Java, Fabric API |
-| `disk-monitor` | Bash скрипт мониторинга дисков — первый DevOps проект | Bash, Linux |
+| [SystemClock Mod](https://github.com/galaxySlab188/GLXSLB5-Repository) | Fabric мод для Minecraft — системное время в игре | Java, Fabric API, Gradle |
+| `disk-monitor` | Bash скрипт мониторинга состояния дисков | Bash, Linux |
 
 ---
 
-### 🔨 Arduino / Железо
+### 🔨 Запланировано — Arduino / Железо
+
+> ⚠️ Проекты не реализованы. Планирую приступить летом 2026 после покупки железа.
 
 | Проект | Описание | Стек |
 |--------|----------|------|
-| `bios-flasher-arduino` | Автономный программатор SPI BIOS флешек без ПК. Чтение / запись / верификация через SOIC8 клипсу. TFT дисплей, SD карта, питание от кроны | Arduino Uno, C++, SPI, TFT |
+| `bios-flasher-arduino` | Автономный программатор SPI BIOS флешек без ПК. Чтение / запись / верификация через SOIC8 клипсу. TFT дисплей, SD карта, питание от кроны | Arduino Uno, C++, SPI |
 | `badusb-leonardo` | HID эмулятор на Arduino Leonardo. Притворяется USB клавиатурой, автоматически выполняет команды на ПК | Arduino Leonardo, C++ |
-| `uart-logger` | Автоматический логгер UART вывода приставки Ростелеком SML 482 HS. Пишет лог загрузки на SD с временными метками | Arduino, C++, UART |
+| `uart-logger` | Автоматический логгер UART вывода устройств. Пишет лог загрузки на SD с временными метками | Arduino, C++, UART |
 | `protocol-analyzer` | Пассивный сниффер SPI/I2C шины. Слушает трафик между двумя устройствами и логирует на SD | Arduino, C++, SPI, I2C |
 | `pc-watchdog` | Hardware watchdog для ПК. Если сервер не отвечает на пинги — Arduino через реле физически нажимает reset | Arduino, C++, Python |
-| `fingerprint-reader` | Считыватель отпечатков пальцев на модуле AS608. Хранит шаблоны, верифицирует личность | Arduino, C++, UART |
-| `power-analyzer` | Анализатор потребления электроэнергии девайсов через датчик тока INA219. Лог на SD | Arduino, C++, I2C |
+| `fingerprint-reader` | Считыватель отпечатков пальцев на модуле AS608 | Arduino, C++, UART |
+| `power-analyzer` | Анализатор потребления электроэнергии через датчик тока INA219. Лог на SD | Arduino, C++, I2C |
 | `rfid-cloner` | Считыватель и клонировщик RFID карт на модуле RC522 | Arduino, C++, SPI |
 | `oscilloscope-tft` | Простой осциллограф на TFT дисплее через аналоговые пины Arduino | Arduino, C++, TFT |
-| `pc-dashboard` | Физический дашборд ПК — CPU, RAM, температура в реальном времени на TFT дисплее | Arduino, C++, Python, Serial |
-| `hidden-camera-detector` | Детектор скрытых камер через IR фотодиод. Большинство дешёвых камер излучают ИК для ночного видения | Arduino, C++ |
+| `pc-dashboard` | Физический дашборд ПК — CPU, RAM, температура в реальном времени на TFT | Arduino, C++, Python |
+| `hidden-camera-detector` | Детектор скрытых камер через IR фотодиод | Arduino, C++ |
 
 ---
 
-### 🐧 Linux / Системное
+### 🔨 Запланировано — Linux / Системное
+
+> ⚠️ Проекты не реализованы.
 
 | Проект | Описание | Стек |
 |--------|----------|------|
@@ -69,15 +81,19 @@ approach:   Сначала практика, потом теория
 
 ---
 
-### 📱 Android / Мобильное
+### 🔨 Запланировано — Android / Мобильное
+
+> ⚠️ Проекты не реализованы. Kotlin ещё не изучал — планирую начать летом 2026.
 
 | Проект | Описание | Стек |
 |--------|----------|------|
-| `biometric-pc-unlock` | Разблокировка ПК отпечатком пальца с Android телефона. BiometricPrompt API → HMAC токен → Python сервер → PAM аутентификация Linux | Kotlin, Python, PAM |
+| `biometric-pc-unlock` | Разблокировка ПК отпечатком пальца с Android. BiometricPrompt API → HMAC токен → Python сервер → PAM аутентификация Linux | Kotlin, Python, PAM |
 
 ---
 
-### 🔐 Безопасность / CTF
+### 🔨 Запланировано — Безопасность / CTF
+
+> ⚠️ Проекты не реализованы.
 
 | Проект | Описание | Стек |
 |--------|----------|------|
@@ -87,20 +103,22 @@ approach:   Сначала практика, потом теория
 
 ## 💻 Опыт с железом
 
-- 🔩 **BIOS моддинг** — извлечение дампов, анализ через UEFITool, работа с UEFI переменными, DVMT/CFG Lock офсеты
-- ⚡ **SPI / I2C / UART протоколы** — программирование флешек, работа с микроконтроллерами
-- 🐧 **Linux системное администрирование** — Nobara/Fedora, Mesa, драйвера, оптимизация системы
-- 📱 **Android** — разблокировка загрузчика, кастомные прошивки, Verified Boot, AVB
-- 🖥️ **Диагностика и ремонт** — замена термопасты, анализ Event ID крашей, оптимизация игр под слабое железо
+Это не программирование — это реальный практический опыт:
+
+- 🔩 **BIOS моддинг** — извлечение дампов, анализ через UEFITool, поиск DVMT/CFG Lock офсетов
+- ⚡ **SPI / I2C / UART** — понимание протоколов, программирование флешек
+- 🐧 **Linux администрирование** — Nobara/Fedora, Mesa, драйвера, оптимизация системы
+- 📱 **Android** — разблокировка загрузчика, Verified Boot, AVB, кастомные прошивки
+- 🖥️ **Диагностика** — анализ крашей через Event ID, оптимизация игр под слабое железо
 
 ---
 
 ## 📈 Путь
 
 ```
-2024 ──── Linux, Bash скрипты, первые DevOps инструменты
-2025 ──── BIOS моддинг, SPI флешки, реверс-инжиниринг железа
-2026 ──── Arduino C++, Android разработка, Kotlin     ← сейчас
+2024 ──── Linux, Bash, первые DevOps инструменты
+2025 ──── BIOS моддинг, SPI флешки, реверс-инжиниринг
+2026 ──── Arduino C++, Android/Kotlin, CTF       ← сейчас
 2027 ──── Колледж КВС, углубление в DevOps
 2029 ──── БГУ
 ???? ──── DevOps Engineer @ Selectel
